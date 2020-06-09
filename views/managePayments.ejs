@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GoodHealthConsult</title>
+        <link href="/styles.css" rel="stylesheet" type="text/css"/>
+        
+    </head>
+    <body id="homeviewbody">
+        <header><h1>GOOD HEALTH CONSULT</h1></header>
+
+
+            <a href="/editPayment" style="margin-right: 20px; "><b>Edit Payment</b></a>
+            <a href="/deletePayment" style="margin-right: 20px; " ><b>Delete Payment</b></a>
+            
+
+        <div id="home">
+            <h3>Edit Payment</h3>
+            <form id="Login" method="POST" action="/editPayments">
+                <p>re enter payment details for patient</p>
+                <p>Firstname <input type="text" name="firstname" placeholder="firstname" required/></p>
+                <p>lastname <input type="text"  name="lastname" placeholder="lastname" required/>
+                <p>Payment Date<input type="date" name="paymentDate" placeholder="payment date" required/></p>
+                <p>Amount Paid<input type="number" name="amount" placeholder="Amount paid" required/></p>
+                <p>Balance Amount<input type="number" name="balance" placeholder="Balance" required/></p>
+                <p style="padding-left: 50px;"><button type="submit" id="submitbutton">sumbit</button></p>
+            </form>
+           
+        </div>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GoodHealthConsult</title>
+        <link href="/styles.css" rel="stylesheet" type="text/css"/>
+        <script>
+            document.getElementById("delete").onsubmit = function() {myFunction()};
+            
+            function myFunction() {
+              alert("document deleted");
+            }
+        </script>
+        
+    </head>
+    <body id="homeviewbody">
+        <header><h1>Delete Patients</h1></header>
+        <div id="home">
+
+            <a href="/addPatients" style="margin-right: 20px; "><b>Add Patient</b></a>
+            <a href="/editPatients" style="margin-right: 20px; " ><b>Edit Patient</b></a>
+            <a href="/deletePatients" style="margin-right: 20px;  "><b>Delete Patients</b></a>
+
+
+            <h3>Delete Patients</h3>
+            <form id="delete" method="POST" action="/deletePatients" onsubmit="myFunction()">
+                <b>Input patient last name to delete</b>
+                <p>lastname   <input type="text" name="lastname" placeholder="last name" required/>       
+                <p style="padding-left: 50px;"><button type="submit" id="submitbutton" onsubmit="deleteSuccess()">sumbit</button></p>
+            </form>
+           
+        </div>
+    </body>
+</html>
